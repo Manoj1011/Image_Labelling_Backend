@@ -8,9 +8,9 @@ module.exports = (mongoose) => {
         useUnifiedTopology: true,
     });
     async function customFunction() {
-        const existingUser = await User.findOne({ username: "manu4477" });
+        const existingUser = await User.findOne({ username: name });
         if (!existingUser) {
-            const hashedPassword = await bcrypt.hash("manoj", 10);
+            const hashedPassword = await bcrypt.hash(password, 10);
             const newUser = new User({
                 username : "manu4477",
                 password: hashedPassword,
