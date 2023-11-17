@@ -59,3 +59,4 @@ Start the server
   npx nodemon index.js
 ```
 
+### In services/connection.js main idea is basically admins need to be added manually in the database. so what I have done is initially while connecting to MongoDB itself I added one admin. Please replace namd and password with your details.
